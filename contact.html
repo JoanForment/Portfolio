@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="contact7">
+      <div class="bg3">
+        <div class="bg4"></div>
+        <b class="contact8" data-animate-on-scroll>CONTACT</b>
+        <b class="b" data-animate-on-scroll>+34 636 31 87 13</b>
+        <b class="s22jformentllotjacat6" data-animate-on-scroll
+          >s22.jforment@llotja.cat</b
+        >
+      </div>
+      <div class="footer7">
+        <img
+          class="instagram-1-icon7"
+          alt=""
+          src="./public/instagram-121.svg"
+          data-animate-on-scroll
+        />
+
+        <img
+          class="behance-1-icon7"
+          alt=""
+          src="./public/behance-111.svg"
+          data-animate-on-scroll
+        />
+
+        <img
+          class="linkedin-1-icon7"
+          alt=""
+          src="./public/linkedin-111.svg"
+          data-animate-on-scroll
+        />
+      </div>
+      <div class="body6">
+        <b class="contact9" data-animate-on-scroll>CONTACT</b>
+        <b class="b1" data-animate-on-scroll>+34 636 31 87 13</b>
+        <b class="s22jformentllotjacat7" data-animate-on-scroll
+          >s22.jforment@llotja.cat</b
+        >
+      </div>
+      <div class="header6">
+        <a class="fabicon-213" href="./work.html" data-animate-on-scroll> </a>
+        <a class="about-me11" href="./about-me.html" data-animate-on-scroll
+          >about me</a
+        >
+        <a class="work7" href="./work.html" data-animate-on-scroll>work</a>
+      </div>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

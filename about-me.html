@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./about-me.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="about-me2">
+      <div class="bg1">
+        <div class="bg2"></div>
+        <b class="about-me3" data-animate-on-scroll>ABOUT ME</b>
+      </div>
+      <div class="footer2">
+        <img
+          class="instagram-1-icon2"
+          alt=""
+          src="./public/instagram-12.svg"
+          data-animate-on-scroll
+        />
+
+        <img
+          class="behance-1-icon2"
+          alt=""
+          src="./public/behance-111.svg"
+          data-animate-on-scroll
+        />
+
+        <img
+          class="linkedin-1-icon2"
+          alt=""
+          src="./public/linkedin-111.svg"
+          data-animate-on-scroll
+        />
+      </div>
+      <div class="body1">
+        <b class="about-me4"
+          >ABOUT ME / ABOUT ME / ABOUT ME / ABOUT ME / ABOUT ME / ABOUT ME /
+          ABOUT ME / ABOUT ME
+        </b>
+        <b class="about-me5"
+          >ABOUT ME / ABOUT ME / ABOUT ME / ABOUT ME / ABOUT ME / ABOUT ME /
+          ABOUT ME / ABOUT ME
+        </b>
+        <div class="in-this-project-container1" data-animate-on-scroll>
+          <p class="in-this-project-we-propose-a1">
+            <span class="in-this-project1"
+              >In this project, we propose a comprehensive
+            </span>
+            <span class="redesign1">redesign</span>
+            <span class="in-this-project1"> of the </span>
+            <span class="redesign1">Boldú Pastry website</span>
+            <span class="in-this-project1">, drawing </span>
+            <span class="redesign1">inspiration from</span>
+            <span class="in-this-project1">
+              the distinctive aesthetics of
+            </span>
+            <span class="redesign1">Stefan Sagmeister</span>
+            <span class="in-this-project1">. </span>
+            <span class="redesign1">Boldú Pastry</span>
+            <span class="in-this-project1"
+              >, known for its delectable treats and
+            </span>
+            <span class="redesign1">artisanal pastries</span>
+            <span
+              >, is ready to elevate its online presence to reflect the
+            </span>
+            <span class="redesign1">creativity</span>
+            <span class="in-this-project1">, </span>
+            <span class="redesign1">innovation</span>
+            <span class="in-this-project1">, and </span>
+            <span class="redesign1">artistic flair</span>
+            <span class="in-this-project1"> associated with </span>
+            <span class="redesign1">Sagmeister's work</span>
+            <span class="in-this-project1">.</span>
+          </p>
+          <p class="in-this-project-we-propose-a1">&nbsp;</p>
+          <p class="in-this-project-we-propose-a1">
+            <span class="redesign1">Stefan Sagmeister</span>
+            <span class="in-this-project1">
+              is renowned for his groundbreaking designs that often incorporate
+              elements of
+            </span>
+            <span class="redesign1">surrealism</span>
+            <span class="in-this-project1">, </span>
+            <span class="redesign1">bold typography</span>
+            <span
+              >, and thought-provoking visual concepts. We aim to infuse these
+              elements into the</span
+            >
+            <span class="redesign1"> new Boldú Pastry website</span>
+            <span class="in-this-project1"> to create a </span>
+            <span class="redesign1">captivating</span>
+            <span class="in-this-project1"> and </span>
+            <span class="redesign1">memorable</span>
+            <span class="in-this-project1">
+              online experience for visitors.</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="header1">
+        <img
+          class="fabicon-24"
+          alt=""
+          src="./public/fabicon-2@2x.png"
+          data-animate-on-scroll
+        />
+
+        <b class="about-me6" data-animate-on-scroll>ABOUT ME</b>
+        <a class="work2" href="./work.html" data-animate-on-scroll>work</a>
+        <a class="contact2" href="./contact.html" data-animate-on-scroll
+          >contact</a
+        >
+      </div>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+
+  /* font sizes */
+  --font-size-29xl: 3rem;
+  --font-size-5xl: 1.5rem;
+  --font-size-21xl: 2.5rem;
+  --font-size-77xl: 6rem;
+  --font-size-109xl: 8rem;
+
+  /* Colors */
+  --color-darkslategray: #2e2e2e;
+  --color-darkseagreen: #9ec983;
+  --color-gray: #fcfcfc;
+  --color-white: #fff;
+  --color-whitesmoke: #ebebeb;
+  --color-black: #000;
+  --color-gainsboro: #e2e2e2;
+
+  /* Border radiuses */
+  --br-51xl: 70px;
+  --br-xl: 20px;
+}

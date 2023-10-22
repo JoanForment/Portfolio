@@ -1,0 +1,482 @@
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.fabicon-27 {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 38.5rem;
+  width: 4.88rem;
+  height: 9.25rem;
+  background-image: url(./public/fabicon-2@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  opacity: 0;
+}
+.fabicon-27.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-top;
+}
+.fabicon-27:hover {
+  cursor: pointer;
+}
+.instagram-1-icon4 {
+  top: 0;
+  left: 10.75rem;
+  width: 2.56rem;
+  height: 3rem;
+}
+.instagram-1-icon4.animate {
+  animation: 1.6s ease 0s 1 normal forwards slide-in-bottom;
+}
+.behance-1-icon4,
+.instagram-1-icon4,
+.linkedin-1-icon4 {
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+}
+.behance-1-icon4 {
+  top: 0;
+  left: 0;
+  width: 3.38rem;
+  height: 3rem;
+}
+.behance-1-icon4.animate {
+  animation: 1.4s ease 0s 1 normal forwards slide-in-bottom;
+}
+.linkedin-1-icon4 {
+  height: 99.72%;
+  width: 20.19%;
+  top: 0.28%;
+  right: 37.09%;
+  bottom: 0;
+  left: 42.72%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.linkedin-1-icon4.animate {
+  animation: 1.2s ease 0s 1 normal forwards slide-in-bottom;
+}
+.social3 {
+  position: absolute;
+  top: 11.69rem;
+  left: 34.25rem;
+  width: 13.31rem;
+  height: 3.19rem;
+}
+.download7,
+.resume7 {
+  position: absolute;
+  display: inline-block;
+}
+.resume7 {
+  top: 0;
+  left: 0;
+  width: 19.88rem;
+  height: 3rem;
+  opacity: 0;
+}
+.resume7.animate {
+  animation: 1.2s ease 0s 1 normal forwards slide-in-right;
+}
+.download7 {
+  top: 0.88rem;
+  left: 9.25rem;
+  width: 8.13rem;
+  height: 2.38rem;
+}
+.download6 {
+  position: absolute;
+  top: 4.63rem;
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-darkseagreen);
+  width: 26.56rem;
+  height: 4.13rem;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray);
+}
+.get-in-touch7,
+.resume6 {
+  position: absolute;
+  top: 0;
+  width: 26.56rem;
+}
+.resume6 {
+  left: 54.56rem;
+  height: 8.75rem;
+}
+.get-in-touch7 {
+  left: 0;
+  display: inline-block;
+  height: 3.19rem;
+  opacity: 0;
+}
+.get-in-touch7.animate {
+  animation: 1.2s ease 0s 1 normal forwards slide-in-left;
+}
+.s22jformentllotjacat3 {
+  position: absolute;
+  top: 0.94rem;
+  left: 4.06rem;
+  display: inline-block;
+  width: 18.5rem;
+  height: 2.38rem;
+}
+.get-in-touch6,
+.gmail3 {
+  position: absolute;
+  left: 0;
+  width: 26.56rem;
+}
+.gmail3 {
+  top: 4.63rem;
+  border-radius: var(--br-xl);
+  background-color: var(--color-darkseagreen);
+  height: 4.13rem;
+  cursor: pointer;
+  opacity: 0;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray);
+}
+.gmail3.animate,
+.psy3-icon.animate {
+  animation: 1.4s ease 0s 1 normal forwards slide-in-left;
+}
+.get-in-touch6 {
+  top: 0;
+  height: 8.75rem;
+  text-align: right;
+}
+.footer4 {
+  position: absolute;
+  top: 357.44rem;
+  left: 19.44rem;
+  width: 81.13rem;
+  height: 14.87rem;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-darkslategray);
+  font-family: var(--font-poppins);
+}
+.psy3-icon,
+.psy4-icon {
+  position: absolute;
+  top: 305.38rem;
+  width: 55.63rem;
+  height: 30.75rem;
+  object-fit: cover;
+  opacity: 0;
+}
+.psy3-icon {
+  left: 0;
+}
+.psy4-icon {
+  left: 57.44rem;
+}
+.psy4-icon.animate {
+  animation: 1.4s ease 0s 1 normal forwards slide-in-right;
+}
+.psy2-icon {
+  top: 273.19rem;
+  left: 57.44rem;
+  width: 55.88rem;
+  height: 31.31rem;
+}
+.psy2-icon.animate {
+  animation: 1.6s ease 0s 1 normal forwards slide-in-bottom;
+}
+.fxrst-2-icon,
+.fxrst-icon,
+.psy1-icon,
+.psy2-icon {
+  position: absolute;
+  object-fit: cover;
+  opacity: 0;
+}
+.psy1-icon {
+  top: 273.19rem;
+  left: 0;
+  width: 55.63rem;
+  height: 31.31rem;
+}
+.psy1-icon.animate {
+  animation: 1.2s ease 0s 1 normal forwards slide-in-bottom;
+}
+.fxrst-2-icon,
+.fxrst-icon {
+  top: 216.69rem;
+  left: 56.69rem;
+  width: 56.63rem;
+  height: 55.63rem;
+}
+.fxrst-2-icon.animate {
+  animation: 2s ease 0s 1 normal forwards slide-in-right;
+}
+.fxrst-icon {
+  left: 0.06rem;
+  width: 55.63rem;
+}
+.fxrst-icon.animate {
+  animation: 2s ease 0s 1 normal forwards slide-in-left;
+}
+.canon-icon,
+.nike-icon,
+.oikos-icon,
+.tchin-tchin-icon {
+  position: absolute;
+  top: 178.13rem;
+  left: 1.19rem;
+  width: 54.75rem;
+  height: 36.69rem;
+  object-fit: cover;
+  opacity: 0;
+}
+.oikos-icon.animate {
+  animation: 1.4s ease 0s 1 normal forwards slide-in-bottom;
+}
+.canon-icon,
+.nike-icon,
+.tchin-tchin-icon {
+  left: 57.5rem;
+}
+.nike-icon.animate {
+  animation: 1.6s ease 0s 1 normal forwards slide-in-bottom;
+}
+.canon-icon,
+.tchin-tchin-icon {
+  top: 140.31rem;
+  left: 57.25rem;
+  width: 55rem;
+}
+.canon-icon.animate {
+  animation: 1.6s ease 0s 1 normal forwards slide-in-right;
+}
+.tchin-tchin-icon {
+  left: 1.19rem;
+  width: 54.75rem;
+}
+.tchin-tchin-icon.animate {
+  animation: 1.6s ease 0s 1 normal forwards slide-in-left;
+}
+.fly-icon,
+.freedom-icon,
+.hideye-icon,
+.ibaez-icon,
+.jazz-icon,
+.skeye-icon {
+  position: absolute;
+  top: 87.88rem;
+  left: 38.69rem;
+  width: 36.13rem;
+  height: 51.06rem;
+  object-fit: cover;
+  opacity: 0;
+}
+.ibaez-icon.animate {
+  animation: 1.4s ease 0s 1 normal forwards slide-in-bottom;
+}
+.fly-icon,
+.freedom-icon,
+.hideye-icon,
+.jazz-icon,
+.skeye-icon {
+  left: 76.31rem;
+  width: 35.88rem;
+}
+.jazz-icon.animate {
+  animation: 1.6s ease 0s 1 normal forwards slide-in-bottom;
+}
+.fly-icon,
+.freedom-icon,
+.hideye-icon,
+.skeye-icon {
+  left: 1.13rem;
+  width: 36.06rem;
+}
+.skeye-icon.animate {
+  animation: 1.2s ease 0s 1 normal forwards slide-in-bottom;
+}
+.fly-icon,
+.freedom-icon,
+.hideye-icon {
+  top: 34.44rem;
+}
+.freedom-icon.animate {
+  animation: 2s ease 0s 1 normal forwards slide-in-left;
+}
+.fly-icon,
+.hideye-icon {
+  left: 76.31rem;
+  width: 35.63rem;
+}
+.hideye-icon.animate {
+  animation: 1.4s ease 0s 1 normal forwards slide-in-right;
+}
+.fly-icon {
+  left: 38.69rem;
+  width: 36.13rem;
+}
+.fly-icon.animate {
+  animation: 1.8s ease 0s 1 normal forwards slide-in-bottom;
+}
+.projects,
+.welcome-to-my {
+  font-family: var(--font-poppins);
+}
+.projects {
+  font-weight: 600;
+}
+.welcome-to-my-graphic-design {
+  margin: 0;
+}
+.graphic-design2,
+.welcome-to-my-container1 {
+  position: absolute;
+  left: 4.94rem;
+  display: inline-block;
+  opacity: 0;
+}
+.welcome-to-my-container1 {
+  top: 8.69rem;
+  width: 71.31rem;
+  height: 20.75rem;
+}
+.welcome-to-my-container1.animate {
+  animation: 1.8s ease 0s 1 normal forwards slide-in-left;
+}
+.graphic-design2 {
+  top: 0;
+  font-size: var(--font-size-77xl);
+  width: 63.94rem;
+  height: 7.75rem;
+}
+.graphic-design2.animate {
+  animation: 1.6s ease 0s 1 normal forwards slide-in-left;
+}
+.body3 {
+  position: absolute;
+  top: 16.25rem;
+  left: 3.31rem;
+  width: 113.31rem;
+  height: 336.13rem;
+}
+.about-me8,
+.contact4,
+.work4 {
+  text-decoration: none;
+  position: absolute;
+  top: 1.81rem;
+  left: 90.94rem;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  width: 7.56rem;
+  height: 1.44rem;
+  opacity: 0;
+}
+.about-me8.animate {
+  animation: 1.6s ease 0s 1 normal forwards slide-in-right;
+}
+.about-me8:hover {
+  cursor: pointer;
+}
+.contact4,
+.work4 {
+  left: 82.69rem;
+  width: 4.63rem;
+}
+.work4.animate {
+  animation: 1.4s ease 0s 1 normal forwards slide-in-right;
+}
+.work4:hover {
+  cursor: pointer;
+}
+.contact4 {
+  left: 102.63rem;
+  width: 6.38rem;
+}
+.contact4.animate {
+  animation: 1.8s ease 0s 1 normal forwards slide-in-right;
+}
+.contact4:hover {
+  cursor: pointer;
+}
+.fabicon-28,
+.header3 {
+  position: absolute;
+  height: 9.25rem;
+}
+.fabicon-28 {
+  text-decoration: none;
+  top: 0;
+  left: 0;
+  width: 4.88rem;
+  background-image: url(./public/fabicon-2@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  opacity: 0;
+}
+.fabicon-28.animate {
+  animation: 1.2s ease 0s 1 normal forwards slide-in-left;
+}
+.fabicon-28:hover {
+  cursor: pointer;
+}
+.header3 {
+  top: 2.69rem;
+  left: 5.5rem;
+  width: 109rem;
+}
+.graphic {
+  position: relative;
+  background: linear-gradient(#ebebeb, #ebebeb), #fff;
+  width: 100%;
+  height: 374.94rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-darkslategray);
+  font-family: var(--font-poppins);
+}

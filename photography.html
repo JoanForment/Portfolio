@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./photography.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="photography2">
+      <footer class="footer3">
+        <a class="fabicon-25" href="./work.html" data-animate-on-scroll> </a>
+        <div class="social2">
+          <img
+            class="instagram-1-icon3"
+            alt=""
+            src="./public/instagram-11.svg"
+            data-animate-on-scroll
+          />
+
+          <img
+            class="behance-1-icon3"
+            alt=""
+            src="./public/behance-11.svg"
+            data-animate-on-scroll
+          />
+
+          <img
+            class="linkedin-1-icon3"
+            alt=""
+            src="./public/linkedin-11.svg"
+            data-animate-on-scroll
+          />
+        </div>
+        <div class="resume4">
+          <b class="resume5" data-animate-on-scroll>Resume</b>
+          <div class="download4">
+            <b class="download5">Download</b>
+          </div>
+        </div>
+        <div class="get-in-touch4">
+          <b class="get-in-touch5" data-animate-on-scroll>Get in touch</b>
+          <div class="gmail2" data-animate-on-scroll>
+            <b class="s22jformentllotjacat2">s22.jforment@llotja.cat</b>
+          </div>
+        </div>
+      </footer>
+      <div class="body2">
+        <img
+          class="bcn5-icon"
+          alt=""
+          src="./public/bcn5-2@2x.png"
+          data-animate-on-scroll
+        />
+
+        <img
+          class="bcn4-icon"
+          alt=""
+          src="./public/bcn4-2@2x.png"
+          data-animate-on-scroll
+        />
+
+        <img
+          class="bcn3-icon"
+          alt=""
+          src="./public/bcn3-2@2x.png"
+          data-animate-on-scroll
+        />
+
+        <img
+          class="bcn2-icon"
+          alt=""
+          src="./public/bcn2-2@2x.png"
+          data-animate-on-scroll
+        />
+
+        <img
+          class="bcn1-icon"
+          alt=""
+          src="./public/bcn1-2@2x.png"
+          data-animate-on-scroll
+        />
+
+        <img
+          class="me-2-icon"
+          alt=""
+          src="./public/me-2@2x.png"
+          data-animate-on-scroll
+        />
+
+        <div class="welcome-to-my-container" data-animate-on-scroll>
+          <span>Welcome to my</span>
+          <span class="moments"> photography</span>
+          <span>
+            portfolio subpage, where I showcase my passion for capturing
+          </span>
+          <span class="moments">moments</span>
+          <span>, </span>
+          <span class="moments">emotions</span>
+          <span>, and the </span>
+          <span class="moments">beauty of the world</span>
+          <span> through my lens. Through my photographs, I aim to tell </span>
+          <span class="moments">stories</span>
+          <span>, </span>
+          <span class="moments">evoke emotions</span>
+          <span>, and capture the </span>
+          <span class="moments">essence</span>
+          <span> of each subject.</span>
+        </div>
+        <b class="photography4" data-animate-on-scroll>PHOTOGRAPHY</b>
+      </div>
+      <div class="header2">
+        <a class="about-me7" href="./about-me.html" data-animate-on-scroll
+          >about me</a
+        >
+        <a class="work3" href="./work.html" data-animate-on-scroll>work</a>
+        <a class="contact3" href="./contact.html" data-animate-on-scroll
+          >contact</a
+        >
+        <a class="fabicon-26" href="./work.html" data-animate-on-scroll> </a>
+      </div>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>
